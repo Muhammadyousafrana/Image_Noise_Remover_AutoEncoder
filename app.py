@@ -6,7 +6,7 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 # Load the saved model
-model = load_model('./image_noise_remover/autotuned_model.keras')
+model = load_model('autotuned_model.keras')
 
 # Function to add noise to the image
 def add_noise(image, noise_factor=0.5):
