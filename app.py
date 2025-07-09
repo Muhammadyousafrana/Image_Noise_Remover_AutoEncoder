@@ -29,18 +29,18 @@ if uploaded_file is not None:
     # Load and preprocess the image
     img = Image.open(uploaded_file).convert('L').resize((28, 28))
     img = np.array(img).astype('float32') / 255.0
-    st.image(img, caption="Uploaded Image", use_column_width=True, clamp=True)
+    st.image(img, caption="Uploaded Image", use_container_width=True, clamp=True)
 
     # Add noise to the image
     noisy_img = add_noise(img, noise_factor)
-    st.image(noisy_img.squeeze(), caption="Noisy Image", use_column_width=True, clamp=True)
+    st.image(noisy_img.squeeze(), caption="Noisy Image", use_container_width=True, clamp=True)
 
     # Make prediction
     noisy_img_exp = np.expand_dims(noisy_img, axis=0)
     denoised_img = model.predict(noisy_img_exp).squeeze()
 
     # Show the denoised image
-    st.image(denoised_img, caption="Denoised Image", use_column_width=True, clamp=True)
+    st.image(denoised_img, caption="Denoised Image", use_container_width=True, clamp=True)
 
     # Display side-by-side comparison
     st.subheader("Comparison")
