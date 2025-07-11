@@ -1,3 +1,3 @@
 # Image_Noise_Remover_AutoEncoder
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=Muhammadyousafrana&theme=github-dark-blue)](https://git.io/streak-stats)
+<a href="https://git.io/streak-stats"><img src="https://myousafrana-github-readme-streak-st.vercel.app?user=Muhammadyousafrana&theme=github-dark-blue" alt="GitHub Streak" /></a>
